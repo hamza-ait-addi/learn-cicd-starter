@@ -42,5 +42,5 @@ jobs:
       - name: Formatting code
         run:  go fmt
 
-      - name: Linting
+      - name: Linting code
         run:  staticcheck
