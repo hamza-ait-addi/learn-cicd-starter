@@ -35,3 +35,12 @@ jobs:
 
       - name: Check code formatting
         run:  test -z $(go fmt ./...)
+
+      - name: Install staticcheck
+        run:  go install honnef.co/go/tools/cmd/staticcheck@latest
+
+      - name: Formatting code
+        run:  go fmt
+
+      - name: Linting
+        run:  staticcheck
