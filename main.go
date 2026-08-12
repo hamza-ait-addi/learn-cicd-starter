@@ -21,6 +21,10 @@ type apiConfig struct {
 	DB *database.Queries
 }
 
+func unused() {
+	// this is nothgin
+}
+
 //go:embed static/*
 var staticFiles embed.FS
 
