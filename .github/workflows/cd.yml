@@ -36,7 +36,7 @@ jobs:
         run: gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
 
       - name: Build Docker image
-        run: docker build -t us-central1-docker.pkg.dev/chirpy-hamza-2026/notely-ar-repo:latest .
+        run:  docker build -t us-central1-docker.pkg.dev/chirpy-hamza-2026/notely-ar-repo/notely-app:latest .
 
       - name: Push Docker image
-        run: docker push us-central1-docker.pkg.dev/chirpy-hamza-2026/notely-ar-repo:latest
+        run:  docker push us-central1-docker.pkg.dev/chirpy-hamza-2026/notely-ar-repo/notely-app:latest
