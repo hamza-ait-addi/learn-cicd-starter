@@ -29,8 +29,8 @@ jobs:
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v3
 
-      - name: Check authenticated account
-        run: gcloud auth list
+      - name: 'Use gcloud CLI'
+        run: gcloud info
 
       - name: Configure Docker
         run: gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
